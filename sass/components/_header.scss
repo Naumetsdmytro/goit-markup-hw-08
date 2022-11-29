@@ -1,0 +1,42 @@
+.header {
+    background: var(--hero-title-color);
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-list-item {
+    align-content: baseline;
+}
+
+
+.header-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+.header-list-info {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icon-info {
+    margin-right: 10px;
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+        fill: #2196F3;
+    }
+}

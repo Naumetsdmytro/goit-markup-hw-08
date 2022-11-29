@@ -1,0 +1,85 @@
+.team {
+    background: var(--background-second);
+}
+
+.team-list {
+    background: var(--hero-title-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
+}
+
+.team-title {
+    text-align: var(--align-centermain);
+    letter-spacing: var(--leter-spacingmain);
+    color: var(--title-color);
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 36px;
+    line-height: 1.16;
+}
+
+.title-after {
+    font-weight: var(--font-weight-basic);
+    text-align: var(--align-centermain);
+    letter-spacing: var(--leter-spacingmain);
+    color: var(--title-color);
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.team-text {
+    text-align: var(--align-centermain);
+    letter-spacing: var(--leter-spacingmain);
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.staff-list {
+    display: flex;
+}
+
+.team-text-container {
+    padding-top: 30px;
+}
+
+.team-list-icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    margin-top: 16px;
+}
+
+.link-icon-list {
+    display: flex;
+    color: #AFB1B8;
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: color 250ms var(--baze-cubic),
+        background-color 250ms var(--baze-cubic);
+
+    &:hover,
+    &:focus {
+        color: #FFFFFF;
+        background-color: #2196F3;
+    }
+}
+
+.icon-team {
+    fill: currentColor;
+}
+
+.item-icon:not(:last-child) {
+    margin-right: 10px;
+}

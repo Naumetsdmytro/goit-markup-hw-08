@@ -1,0 +1,27 @@
+/*Utils*/
+@import "./utils/variables";
+@import "./utils/v-hidden";
+
+/*Base*/
+@import "./base/base";
+@import "./base/reset";
+
+/*Components*/
+@import "./components/section";
+@import "./components/container";
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/btn";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/benefits";
+@import "./components/work";
+@import "./components/team";
+@import "./components/client";
+@import "./components/footer";
+@import "./components/adress-footer";
+@import "./components/joined";
+@import "./components/footer-cont";
+@import "./components/modal";
+@import "./components/portfolio";
+@import "./components/filter-portfolio";
