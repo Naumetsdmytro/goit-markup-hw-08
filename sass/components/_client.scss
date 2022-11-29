@@ -13,9 +13,20 @@
 
 .list-client {
     display: flex;
+    margin-right: -30px;
+
+    @media screen and (max-width:1200px) {
+        flex-wrap: wrap;
+        margin-top: -30px;
+    }
 }
 
-.list-client__item:not(:last-child) {
+.list-client__item {
+    @media screen and (max-width:1200px) {
+        flex-basis: calc(100% / 2 - 30px);
+        margin-top: 30px;
+    }
+
     margin-right: 30px;
 }
 
@@ -42,4 +53,5 @@
 
 .list-client__icon {
     fill: currentColor;
+    margin: 0;
 }

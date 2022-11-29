@@ -9,8 +9,12 @@
 }
 
 .header-nav {
-    display: flex;
-    align-items: center;
+    display: none;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .header-list-item {
@@ -24,10 +28,14 @@
 
 
 .header-list-info {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-    justify-content: center;
+    display: none;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 

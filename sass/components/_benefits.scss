@@ -28,8 +28,10 @@
 }
 
 .benefits-list {
-    display: flex;
-    margin-left: -30px;
+    @media screen and (min-width:1200px) {
+        display: flex;
+        margin-left: -30px;
+    }
 }
 
 .benefits-list__item {

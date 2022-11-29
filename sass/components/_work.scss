@@ -1,6 +1,11 @@
 .work-example {
     background: var(--hero-title-color);
     padding-top: 0;
+
+    @media screen and (max-width:768px) {
+        display: none;
+
+    }
 }
 
 
@@ -13,8 +18,10 @@
 
 
 .work-list {
-    display: flex;
-    margin-right: -30px;
+    @media screen and (min-width:1200px) {
+        display: flex;
+        margin-right: -30px;
+    }
 }
 
 
