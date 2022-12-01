@@ -10,6 +10,8 @@
 
 .list-icon-footer {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .link-icon-footer {
@@ -36,8 +38,4 @@
 
 .item-icon-footer:not(:last-child) {
     margin-right: 10px;
-}
-
-.container-icon-footer {
-    margin-left: 70px;
 }

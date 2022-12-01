@@ -1,33 +1,63 @@
 .hero {
     background: var(--background-hero);
     margin: 0;
-    background-size: center;
-    background-repeat: no-repeat;
+    max-width: 1600px;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
-    padding: 118px 60px;
+    padding: 118px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@1x.jpg);
 
-    @media screen and (min-width:1200px) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-mobile@2x.jpg');
+    }
+
+    @media screen and (min-width:481px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/tablet-heder@1x.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/tablet-header@2x.jpg');
+        }
+    }
+
+    @media screen and (min-width:769px) {
         padding: 200px 0;
-        height: 600px;
-        max-width: 1600px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Imgbg.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/desk-bg@2x.jpg');
+        }
     }
 }
 
 .hero-title {
+    margin: 0 auto;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     letter-spacing: 0.06em;
+    font-size: 26px;
+    line-height: 1.62;
+    max-width: 360px;
     text-transform: uppercase;
     color: var(--hero-title-color);
-    max-width: 696px;
-    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+    }
 }
 
 .button-hero {
