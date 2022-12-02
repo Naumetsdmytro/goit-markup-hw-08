@@ -204,11 +204,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .link-head {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .button {
@@ -253,6 +257,24 @@ img {
   margin-right: 50px;
 }
 
+.header-list-info .header-info-item {
+  margin-right: 0;
+}
+@media screen and (min-width: 1200px) {
+  .header-list-info .header-info-item {
+    margin-right: 50px;
+  }
+}
+
+.header-info-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header-info-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
 .header-list-info {
   display: none;
 }
@@ -261,22 +283,39 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-list-info {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
 .icon-info {
-  margin-right: 10px;
   fill: currentColor;
+  margin-right: 8px;
 }
 .icon-info:hover, .icon-info:focus {
   fill: #2196F3;
+}
+@media screen and (min-width: 1200px) {
+  .icon-info {
+    margin-right: 10px;
+  }
 }
 
 .burger-icon {
@@ -377,12 +416,16 @@ img {
 }
 
 .benefits-list__title {
-  text-align: center;
   font-size: var(--fontsize-title);
   line-height: var(--lineheight-basic);
   letter-spacing: var(--leter-spacingmain);
   text-transform: uppercase;
   color: var(--title-color);
+}
+@media screen and (max-width: 767px) {
+  .benefits-list__title {
+    text-align: center;
+  }
 }
 
 .benefits-list__text {
@@ -407,6 +450,11 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .benefits-list__container {
+    width: 354px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .benefits-list__container {
     width: 270px;
@@ -414,12 +462,20 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .benefits-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-left: -30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -428,14 +484,16 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .benefits-list__item {
-    margin-left: 30px;
     -ms-flex-preferred-size: calc(25% - 30px);
         flex-basis: calc(25% - 30px);
+    margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .benefits-list__item {
-    margin-bottom: 0;
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+    margin-left: 30px;
   }
 }
 
@@ -444,12 +502,13 @@ img {
 }
 
 .work-example {
+  display: none;
   background: var(--hero-title-color);
   padding-top: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .work-example {
-    display: none;
+    display: block;
   }
 }
 
@@ -505,12 +564,26 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team-list:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767.9px) {
+  .team-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
-  .team-list:not(:first-child) {
+  .team-list {
     margin-left: 30px;
+    margin-bottom: 0;
+    margin-top: 30px;
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    margin-top: 0;
+    -ms-flex-preferred-size: calc(25% - 30px);
+        flex-basis: calc(25% - 30px);
   }
 }
 
@@ -559,6 +632,10 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 
@@ -635,11 +712,13 @@ img {
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .list-client {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -676,6 +755,7 @@ img {
           align-items: center;
   -webkit-transition: color 250ms var(--baze-cubic), border-color 250ms var(--baze-cubic);
   transition: color 250ms var(--baze-cubic), border-color 250ms var(--baze-cubic);
+  margin-right: 0;
 }
 .list-client__link:hover, .list-client__link:focus {
   color: #2196F3;
@@ -684,6 +764,11 @@ img {
 @media screen and (min-width: 1200px) {
   .list-client__link {
     width: 170px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list-client__link {
+    max-width: 226px;
   }
 }
 
@@ -776,11 +861,24 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 89px 0 76px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-container {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    padding: 0 15px;
   }
 }
 
@@ -865,6 +963,12 @@ img {
 @media screen and (min-width: 1200px) {
   .container-icon-footer {
     margin-left: 70px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-icon-footer {
+    margin-left: auto;
+    margin-bottom: 0;
   }
 }
 
