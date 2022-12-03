@@ -877,6 +877,7 @@ img {
             align-items: baseline;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -985,6 +986,10 @@ img {
 @media screen and (max-width: 1199.9px) {
   .container-form {
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-form {
     margin: 0 auto;
   }
 }
@@ -1061,7 +1066,6 @@ img {
 
 .form-field {
   display: inline-block;
-  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1072,6 +1076,7 @@ img {
 @media screen and (max-width: 767.9px) {
   .form-field {
     max-width: 450px;
+    width: 100%;
   }
 }
 .form-field::-webkit-input-placeholder {
