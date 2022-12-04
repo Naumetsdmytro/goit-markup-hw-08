@@ -32,6 +32,10 @@
     letter-spacing: var(--leter-spacingmain);
     color: var(--title-color);
     margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .title {

@@ -128,11 +128,12 @@ img {
 
 .logo {
   display: block;
-  padding: 24px 0 25px;
+  padding: 16px 0;
 }
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 93px;
+    padding: 24px 0 25px;
   }
 }
 
@@ -426,7 +427,7 @@ img {
   text-transform: uppercase;
   color: var(--title-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .benefits-list__title {
     text-align: center;
   }
@@ -474,18 +475,21 @@ img {
     margin-left: -30px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: -30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits-list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    margin-bottom: 0;
   }
 }
 
-.benefits-list__item {
+.benefits-list__item:not(:last-child) {
   margin-bottom: 30px;
 }
+
 @media screen and (min-width: 768px) {
   .benefits-list__item {
     -ms-flex-preferred-size: calc(50% - 30px);
@@ -596,6 +600,11 @@ img {
   letter-spacing: var(--leter-spacingmain);
   color: var(--title-color);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    margin-bottom: 0;
+  }
 }
 
 .title {
@@ -723,6 +732,7 @@ img {
   .list-client {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    margin-top: 0;
   }
 }
 
@@ -736,6 +746,11 @@ img {
   .list-client__item {
     -ms-flex-preferred-size: calc(33.3333333333% - 30px);
         flex-basis: calc(33.3333333333% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-client__item {
+    margin-top: 0;
   }
 }
 
@@ -886,10 +901,14 @@ img {
   }
 }
 
-@media screen and (max-width: 1199.9px) {
+.adress-cont {
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
   .adress-cont {
-    text-align: center;
-    margin-bottom: 60px;
+    text-align: start;
+    margin-bottom: 0;
   }
 }
 
@@ -978,7 +997,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .container-icon-footer {
-    margin-left: 94px;
+    margin-left: 70px;
+    text-align: start;
   }
 }
 

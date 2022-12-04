@@ -9,7 +9,7 @@
     text-transform: uppercase;
     color: var(--title-color);
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:767.9px) {
         text-align: center;
     }
 }
@@ -48,16 +48,20 @@
         display: flex;
         margin-left: -30px;
         flex-wrap: wrap;
+        margin-bottom: -30px;
     }
 
     @media screen and (min-width:1200px) {
         flex-wrap: nowrap;
+        margin-bottom: 0;
     }
 }
 
-.benefits-list__item {
+.benefits-list__item:not(:last-child) {
     margin-bottom: 30px;
+}
 
+.benefits-list__item {
 
     @media screen and (min-width:768px) {
         flex-basis: calc(100% / 2 - 30px);

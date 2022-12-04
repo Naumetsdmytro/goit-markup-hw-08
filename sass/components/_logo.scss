@@ -21,10 +21,11 @@
 
 .logo {
     display: block;
-    padding: 24px 0 25px;
+    padding: 16px 0;
 
     @media screen and (min-width:768px) {
         margin-right: 93px;
+        padding: 24px 0 25px;
     }
 }
 
