@@ -59,6 +59,10 @@
 
 .benefits-list__item:not(:last-child) {
     margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .benefits-list__item {
@@ -70,7 +74,6 @@
 
     @media screen and (min-width:1200px) {
         flex-basis: calc(100% / 4 - 30px);
-        margin-bottom: 0;
     }
 
 }
