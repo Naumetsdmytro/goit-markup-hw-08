@@ -32,7 +32,9 @@
 }
 
 .link-filter {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     color: inherit;
     font-family: inherit;
     text-decoration: none;
