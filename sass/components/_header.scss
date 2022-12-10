@@ -22,24 +22,22 @@
 }
 
 
-
 .header-list-item:not(:last-child) {
     margin-right: 50px;
 }
 
-.header-list-info .header-info-item {
-    margin-right: 0;
-
-    @media screen and (min-width:1200px) {
-        margin-right: 50px;
-    }
-}
 
 .header-info-item:not(:last-child) {
     margin-bottom: 10px;
+    margin-right: 50px;
+
+    @media screen and (min-width:768px) {
+        margin-right: 0;
+    }
 
     @media screen and (min-width:1200px) {
         margin-bottom: 0;
+        margin-right: 50px;
     }
 }
 

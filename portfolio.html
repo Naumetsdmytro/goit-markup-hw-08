@@ -20,9 +20,9 @@
 <body>
     <header class="header">
         <div class="container header-container">
+            <a href="./index.html" class="link logo"><span class="logo-first logo-link">Web</span><span
+                    class="logo-second logo-link">Studio</span></a>
             <nav class="header-nav">
-                <a href="./index.html" class="link logo"><span class="logo-first logo-link">Web</span><span
-                        class="logo-second logo-link">Studio</span></a>
                 <ul class="list header-list">
                     <li class="header-list-item"><a href="./index.html" class="link-nav link">Студія</a></li>
                     <li class="header-list-item"><a href="./portfolio.html" class="link-nav link current">Портфоліо</a>
@@ -31,15 +31,20 @@
                 </ul>
             </nav>
             <ul class="list header-list-info">
-                <li class="header-list-item"><a href="mailto:info@devstudio.com" class="link link-head"><svg
-                            class="icon-info" width="16" height="12">
+                <li class="header-list-item header-info-item"><a href="mailto:info@devstudio.com"
+                        class="link link-head"><svg class="icon-info" width="16" height="12">
                             <use href="./images/icons.svg#envelope-1"></use>
                         </svg> info@devstudio.com</a></li>
-                <li class="header-list-item"><a href="tel:+380961111111" class="link link-head"><svg width="10"
-                            height="16" class="icon-info">
+                <li class="header-list-item header-info-item"><a href="tel:+380961111111" class="link link-head"><svg
+                            width="10" height="16" class="icon-info">
                             <use href="./images/icons.svg#telephone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="40" class="burger-icon">
+                    <use href="./images/icons.svg#burger"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -57,7 +62,10 @@
                 </ul>
                 <ul class="list filter-list">
                     <li class="filter-list-item"><a href="" class="link-filter">
-                            <div class="thumb"><img src="./images/photo1.jpg" alt="Технокряк" width="370" height="294">
+                            <div class="thumb"><img
+                                    srcset="./images/port-mob-1@1x.jpg 450w,./images/port-mob-1@2x.jpg 900w,./images/port-tabl-1@1x.jpg 354w,./images/port-tabl-1@2x.jpg 708w,./images/port-desk-1@1x.jpg 370w,./images/port-desk-1@2x.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                    src="./images/port-mob-1@1x.jpg" alt="Технокряк" width="450" height="294">
                                 <div class="overlay">
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -70,8 +78,11 @@
                             </div>
                         </a></li>
                     <li class="filter-list-item"><a href="" class="link-filter">
-                            <div class="thumb"><img src="./images/photo2.jpg" alt="Постер New Orlean vs Golden Star"
-                                    width="370" height="294">
+                            <div class="thumb"><img
+                                    srcset="./images/port-mob-2@1x.jpg 450w,./images/port-mob-2@2x.jpg 900w,./images/port-tabl-2@1x.jpg 354w,./images/port-tabl-2@2x.jpg 708w,./images/port-desk-2@1x.jpg 370w,./images/port-desk-2@2x.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                    src="./images/port-mob-2@1x.jpg" alt="Постер New Orlean vs Golden Star" width="450"
+                                    height="294">
                                 <div class="overlay">
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -84,8 +95,10 @@
                             </div>
                         </a></li>
                     <li class="filter-list-item"><a href="" class="link-filter">
-                            <div class="thumb"><img src="./images/photo3.jpg" alt="Ресторан Seafood" width="370"
-                                    height="294">
+                            <div class="thumb"><img
+                                    srcset="./images/port-mob-3@1x.jpg 450w,./images/port-mob-3@2x.jpg 900w,./images/port-tabl-3@1x.jpg 354w,./images/port-tabl-3@2x.jpg 708w,./images/port-desk-3@1x.jpg 370w,./images/port-desk-3@2x.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                    src="./images/port-mob-3@1x.jpg" alt="Ресторан Seafood" width="450" height="294">
                                 <div class="overlay">
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -98,8 +111,10 @@
                             </div>
                         </a></li>
                     <li class="filter-list-item"><a href="" class="link-filter">
-                            <div class="thumb"><img src="./images/photo4.jpg" alt="Проєкт Prime" width="370"
-                                    height="294">
+                            <div class="thumb"><img
+                                    srcset="./images/port-mob-4@1x.jpg 450w,./images/port-mob-4@2x.jpg 900w,./images/port-tabl-4@1x.jpg 354w,./images/port-tabl-4@2x.jpg 708w,./images/port-desk-4@1x.jpg 370w,./images/port-desk-4@2x.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                    src="./images/port-mob-4@1x.jpg" alt="Проєкт Prime" width="450" height="294">
                                 <div class="overlay">
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -112,8 +127,10 @@
                             </div>
                         </a></li>
                     <li class="filter-list-item"><a href="" class="link-filter">
-                            <div class="thumb"><img src="./images/photo5.jpg" alt="Проєкт Boxes" width="370"
-                                    height="294">
+                            <div class="thumb"><img
+                                    srcset="./images/port-mob-5@1x.jpg 450w,./images/port-mob-5@2x.jpg 900w,./images/port-tabl-5@1x.jpg 354w,./images/port-tabl-5@2x.jpg 708w,./images/port-desk-5@1x.jpg 370w,./images/port-desk-5@2x.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                    src="./images/port-mob-5@1x.jpg" alt="Проєкт Boxes" width="450" height="294">
                                 <div class="overlay">
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -126,8 +143,11 @@
                             </div>
                         </a></li>
                     <li class="filter-list-item"><a href="" class="link-filter">
-                            <div class="thumb"><img src="./images/photo6.jpg" alt="Inspiration has no Borders"
-                                    width="370" height="294">
+                            <div class="thumb"><img
+                                    srcset="./images/port-mob-6@1x.jpg 450w,./images/port-mob-6@2x.jpg 900w,./images/port-tabl-6@1x.jpg 354w,./images/port-tabl-6@2x.jpg 708w,./images/port-desk-6@1x.jpg 370w,./images/port-desk-6@2x.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                    src="./images/port-mob-6@1x.jpg" alt="Inspiration has no Borders" width="450"
+                                    height="294">
                                 <div class="overlay">
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -141,7 +161,10 @@
                         </a>
                     </li>
                     <li class="filter-list-item"><a href="" class="link-filter">
-                            <div class="thumb"><img src="./images/photo7.jpg" alt="Видання Limited Edition" width="370"
+                            <div class="thumb"><img
+                                    srcset="./images/port-mob-7@1x.jpg 450w,./images/port-mob-7@2x.jpg 900w,./images/port-tabl-7@1x.jpg 354w,./images/port-tabl-7@2x.jpg 708w,./images/port-desk-7@1x.jpg 370w,./images/port-desk-7@2x.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                    src="./images/port-mob-7@1x.jpg" alt="Видання Limited Edition" width="450"
                                     height="294">
                                 <div class="overlay">
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -155,7 +178,10 @@
                             </div>
                         </a></li>
                     <li class="filter-list-item"><a href="" class="link-filter">
-                            <div class="thumb"><img src="./images/photo8.jpg" alt="Проєкт Lab" width="370" height="294">
+                            <div class="thumb"><img
+                                    srcset="./images/port-mob-8@1x.jpg 450w,./images/port-mob-8@2x.jpg 900w,./images/port-tabl-8@1x.jpg 354w,./images/port-tabl-8@2x.jpg 708w,./images/port-desk-8@1x.jpg 370w,./images/port-desk-8@2x.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                    src="./images/port-mob-8@1x.jpg" alt="Проєкт Lab" width="450" height="294">
                                 <div class="overlay">
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -168,8 +194,10 @@
                             </div>
                         </a></li>
                     <li class="filter-list-item"><a href="" class="link-filter">
-                            <div class="thumb"><img src="./images/photo9.jpg" alt="Growing Business" width="370"
-                                    height="294">
+                            <div class="thumb"><img
+                                    srcset="./images/port-mob-9@1x.jpg 450w,./images/port-mob-9@2x.jpg 900w,./images/port-tabl-9@1x.jpg 354w,./images/port-tabl-9@2x.jpg 708w,./images/port-desk-9@1x.jpg 370w,./images/port-desk-9@2x.jpg 740w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                    src="./images/port-mob-9@1x.jpg" alt="Growing Business" width="450" height="294">
                                 <div class="overlay">
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -187,12 +215,13 @@
     </main>
     <footer class="navigation footer-nav">
         <div class="container footer-container">
-            <div>
+            <div class="adress-cont">
                 <a href="./index.html" class="link logo-footer"><span class="logo-first logo-link">Web</span><span
                         class="logo-third">Studio</span></a>
                 <address class="navigation-after">
                     <ul class="list">
-                        <li><a href="https://goo.gl/maps/XB4yXC44z2DS1Ke76" class="link street logo-link">м. Київ, пр-т
+                        <li><a href="https://goo.gl/maps/XB4yXC44z2DS1Ke76" class="link street logo-link">м. Київ,
+                                пр-т
                                 Лесі
                                 Українки,
                                 26</a>
@@ -237,6 +266,35 @@
             </div>
         </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40">
+                <use href="./images/icons.svg#menu-close"></use>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu">
+            <li class="mobile-item"><a href="" class="link menu-link current-mobile">Студія</a></li>
+            <li class="mobile-item"><a href="" class="link menu-link">Портфоліо</a></li>
+            <li class="mobile-item"><a href="" class="link menu-link">Контакти</a></li>
+        </ul>
+        <ul class="list mobile-contacts">
+            <li class="mobile-contacts-tel"><a href="" class="link">+38 096 111 11 11</a></li>
+            <li class="mobile-contacts-mail"><a href="" class="link">info@devstudio.com</a></li>
+            <li>
+                <ul class="menu-social list">
+                    <li class="menu-social-item"><a href="" class="link">Instagram</a></li>
+                    <li class="menu-social-item"><a href="" class="link">Twitter</a></li>
+                    <li class="menu-social-item"><a href="" class="link">Facebook</a></li>
+                    <li class="menu-social-item"><a href="" class="link">LinkedIn</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 
 
 
